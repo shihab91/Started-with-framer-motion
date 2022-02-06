@@ -11,9 +11,11 @@ const containerVariants = {
     transition: {
       delay: 1.5,
       duration: 1.5,
-      when: "beforeChildren",
-      staggerChildren: 1,
     },
+  },
+  exit: {
+    x: "-100vw",
+    transition: { ease: "easeInOut" },
   },
 };
 const buttonVariants = {
@@ -34,14 +36,11 @@ const Home = () => {
       variants={containerVariants}
       initial="hidden"
       animate="visible"
+      exit="exit"
     >
       <h2>Welcome to Pizza Joint</h2>
       <Link to="/base">
-        <motion.button
-          variants={buttonVariants}
-          whileHover="hover"
-          animate="visible"
-        >
+        <motion.button variants={buttonVariants} whileHover="hover">
           Create Your Pizza
         </motion.button>
       </Link>
