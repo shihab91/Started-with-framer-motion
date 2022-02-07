@@ -15,6 +15,10 @@ const containerVariants = {
       delay: 0.5,
     },
   },
+  exit: {
+    x: "-100vw",
+    transition: { ease: "easeInOut" },
+  },
 };
 
 const nextVariants = {
@@ -27,10 +31,6 @@ const nextVariants = {
       type: "spring",
       stiffness: 120,
     },
-  },
-  exit: {
-    x: "-100vw",
-    transition: { ease: "easeInOut" },
   },
 };
 
