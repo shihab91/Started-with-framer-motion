@@ -3,8 +3,8 @@ import React from "react";
 
 const loaderVariants = {
   animationOne: {
-    x: [-20, 20],
-    y: [0, -30],
+    x: [20, -20],
+    y: [-30, 0],
     transition: {
       x: {
         yoyo: Infinity,
@@ -13,6 +13,7 @@ const loaderVariants = {
       y: {
         yoyo: Infinity,
         duration: 0.25,
+        ease: "easeOut",
       },
     },
   },
